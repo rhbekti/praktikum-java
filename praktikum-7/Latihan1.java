@@ -3,7 +3,7 @@
     dev    : Rahman Pambekti 
  */
 import java.util.Scanner;
-class Lat1 { 
+class Latihan1 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[]args){
@@ -27,7 +27,7 @@ class Lat1 {
                     System.out.println("harga kendaraan yang anda pilih honda mobilio : Rp 170.000.000");
                     break;
                 default:
-                    System.out.println("pilihan tidak dapat di proses");
+                    System.out.println("pilihan anda tidak dapat di proses");
             }
         }else if(pilihan == 2){
             System.out.print("-- Daftar Motor --\nPilihan : \n1.Vario\n2.Beat\n3.Vixion\nMasukkan Pilihan :");
@@ -44,10 +44,10 @@ class Lat1 {
                     System.out.println("harga kendaraan yang anda pilih vixion : Rp 20.000.000");
                     break;
                 default:
-                    System.out.println("pilihan tidak dapat di proses");
+                    System.out.println("pilihan anda tidak dapat di proses");
             }
         }else{
-            System.out.println("pilihan tidak dapat di proses");
+            System.out.println("pilihan anda tidak dapat di proses");
         }
     }
 }
