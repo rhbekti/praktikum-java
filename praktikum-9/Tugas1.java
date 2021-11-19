@@ -1,15 +1,22 @@
-public class Tugas1 {
+import java.util.Scanner;
 
-	public static void main(String[] args){
-		// inisialisasi variabel celcius dan fahrenheit
-		double celcius,fahrenheit;
-		// menampilkan nilai suhu fahrenheit dari nilai celcius 20 - 30
-		celcius = 20;
-		// memproses perulangan
-		do{
-			fahrenheit = (celcius*9/5) + 32;
-			System.out.println("suhu celcius "+celcius+" = "+fahrenheit+" F");
-			celcius++;
-		} while(celcius <= 30);
-	}
+public class Tugas1{
+    private static Scanner scan = new Scanner(System.in);
+    
+    public static void main(String[] args){
+       int data,bil,i = 1,jumlah = 0;
+
+       System.out.print("Banyaknya data : ");
+       data = scan.nextInt();
+
+       do{
+           System.out.print("Data ke-"+i+": ");
+           bil = scan.nextInt();
+           jumlah += bil;
+           i++;
+       } while(i <= data);
+
+       System.out.println("Jumlah : "+Double.valueOf(jumlah));
+       System.out.println("Rata-Rata : "+(Double.valueOf(jumlah)/Double.valueOf(data)));
+    }
 }

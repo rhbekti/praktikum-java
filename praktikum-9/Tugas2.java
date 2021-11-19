@@ -1,28 +1,17 @@
 import java.util.Scanner;
-public class Tugas2 {
 
-	private static Scanner scan = new Scanner(System.in);
+public class Tugas2{
+    private static Scanner scan = new Scanner(System.in);
+    
+    public static void main(String[] args){
+      int i = 1,n;
 
-	public static void main(String[] args){
-		String jawab;
-		int counter = 0;
-		boolean kondisi = true;
+      System.out.print("Masukkan nilai n = ");
+      n = scan.nextInt();
 
-		do{
-			System.out.println("STMIK AKAKOM");
-			System.out.print("Tampilkan lagi [ya/tidak]?");
-			jawab = scan.nextLine();
-			if(jawab.equalsIgnoreCase("tidak")){
-				kondisi = false;
-			} else if(jawab.equalsIgnoreCase("ya")){
-				kondisi = true;
-			} else {
-				System.out.println("Input jawab anda tidak dapat di proses");
-				kondisi = false;
-			}
-			counter++;
-		} while(kondisi);
-
-		System.out.println("Anda telah melakukan perulangan sebnayak = "+counter);
-	}
+      do{
+          System.out.print(i*i+" ");
+          i++;
+      } while(i <= n);
+    }
 }
